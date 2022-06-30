@@ -1,25 +1,20 @@
-declare function checkLink(options: checkLink.Options): checkLink.Link;
+declare type Options = {
+    link: string;
+    startsWith?: string;
+};
+declare type Result = {
+    time: string;
+    status: (number | string);
+    exists: (boolean | string);
+};
 
-declare namespace checkLink {
-    export type Options = {
-        link: string;
-        startsWith?: string;
-    }
-    export type checkReturned = {
-        time: string;
-        status: (number | string);
-        exists: (boolean | string);
-    }
-    export class Link {
-        constructor(options: Options);
-        private #link;
-        private #startsWith;
-
-        /**
-         * @returns {checkReturned}
-         */
-        public check(): checkReturned;
-    }
+class checkLink {
+    private link;
+    private startsWith;
+    constructor(options: Options);
+    check(): Promise<Result>;
 }
 
-export = checkLink;
+export  { checkLink };
+
+//# sourceMappingURL=index.d.ts.map
