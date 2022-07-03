@@ -44,27 +44,20 @@ checker.check().then(result => {
 
 ```
 
-**Classess**
 
 **Methods**
 
-> check
-    > One parameter options
-        options - object with two propeties
-            options#link - should be string, the link to the website.
-            options#startsWith - should be a string, the [protocol](https://developer.mozilla.org/en-US/docs/Glossary/Protocol)
-    > Returns an object.
+> checkLink#check: One parameter options is object with two propeties.
+>> options#link - should be string, the link to the website.
+>> options#startsWith - should be a string, the [protocol](https://developer.mozilla.org/en-US/docs/Glossary/Protocol)
+> Returns an object.
 
-<p styles="text-align: center;"><strong>Properties</strong></p>
+**Properties**
 
 > links -> An array of objects. Filled by the links that were fetched.
 
+**Releases**
 
-
-<p style="text-align:center;">Releases</p>
-
-<p style="color: red">1.0.1 -> **Adding readme file.**</p>
-
-<p style="color: red">1.0.2 -> **Fixing typings issues.**</p>
-
-<p style="color: red">1.0.3 -> **Adding *url* to the result of the function checkLink#check. And adding options to the method check not to the constructor of the class.**</p> 
+> 1.0.1 -> **Adding readme file.**
+> 1.0.2 -> **Fixing typings issues.**
+> 1.0.3 -> **Adding *url* to the result of the function checkLink#check. And adding options to the method check not to the constructor of the class.**
