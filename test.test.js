@@ -1,10 +1,20 @@
-
 const checkLink = require("./index.js"),
-    checker = new checkLink.checkLink({
+    checker = new checkLink.checkLink();
+    
+(async () => {
+   await checker.check({
         link: "www.google.com",
-        startsWith: "https://" // Default is http.
+        startsWith: "http://" // Default is http.
+    }).then(result => {
+        console.log(result);
     });
-
-checker.check().then(result => {
-    console.log(result);
-});
+    
+    await checker.check({
+        link: "www.youtube.com",
+        startsWith: "https://" // Default is http.
+    }).then(result => {
+        console.log(result);
+    });
+    
+    console.log(checker.links);
+})()
