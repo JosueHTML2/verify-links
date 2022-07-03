@@ -44,20 +44,20 @@ checker.check().then(result => {
 
 ```
 
-<p styles="text-align: center;">Classes</p>
+**Classess**
 
-<p styles="text-align: center;"><strong>Methods</strong></p>
+**Methods**
 
-- check
-    - One parameter options
+> check
+    > One parameter options
         options - object with two propeties
             options#link - should be string, the link to the website.
             options#startsWith - should be a string, the [protocol](https://developer.mozilla.org/en-US/docs/Glossary/Protocol)
-    - Returns an object.
+    > Returns an object.
 
 <p styles="text-align: center;"><strong>Properties</strong></p>
 
-- links -> An array of objects. Filled by the links that were fetched.
+> links -> An array of objects. Filled by the links that were fetched.
 
 
 
