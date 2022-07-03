@@ -6,15 +6,17 @@ declare type Result = {
     time: string;
     status: (number | string);
     exists: (boolean | string);
+    url: string;
+
 };
 
-class checkLink {
+declare class checkLink {
     private link;
     private startsWith;
-    constructor(options: Options);
-    check(): Promise<Result>;
+    constructor();
+    check(options: Options): Promise<Result>;
 }
 
-export  { checkLink };
+export { checkLink };
 
 //# sourceMappingURL=index.d.ts.map
