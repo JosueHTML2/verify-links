@@ -1,11 +1,12 @@
-<p style="text-align: center;">Links verifier</p>
- It is a package that verifys links
+# Links verifier
+
+## It is a package that verifys links
 
 # How to use it
 
-<p styles="text-align: center;">Examples</p>
+**Examples**
 
-<p styles="text-align: center;">Fecthing one website</p>
+**Fecthing one website**
 
 
 ```js
@@ -21,7 +22,7 @@ checker.check().then(result => {
 });
 ```
 
-<p styles="text-align: center;">More than one</p>
+**More than one**
 
 ```js 
 (async () => {
@@ -59,5 +60,7 @@ checker.check().then(result => {
 **Releases**
 
 > 1.0.1 -> **Adding readme file.**
+
 > 1.0.2 -> **Fixing typings issues.**
+
 > 1.0.3 -> **Adding *url* to the result of the function checkLink#check. And adding options to the method check not to the constructor of the class.**
